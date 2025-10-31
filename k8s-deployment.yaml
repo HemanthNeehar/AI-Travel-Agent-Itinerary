@@ -23,6 +23,13 @@ spec:
           envFrom:
             - secretRef:
                 name: llmops-secrets            # Local environment variables
+          resources:
+            limits:
+              memory: "2Gi"
+              cpu: "1"
+            requests:
+              memory: "1Gi"
+              cpu: "500m"          
 ---
 apiVersion: v1
 kind: Service

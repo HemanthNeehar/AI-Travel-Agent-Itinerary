@@ -197,4 +197,4 @@ metadata:
   namespace: logging
   labels:
     k8s-app: filebeat
----
+    
